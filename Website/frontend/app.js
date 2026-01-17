@@ -1,22 +1,4 @@
 const output = document.getElementById("output");
-const DATA = {
-  food: [
-    { name: "Chicken Rice", img: "img/food/chicken.jpg" },
-    { name: "Fishball Noodles", img: "img/food/noodles.jpg" },
-    { name: "Vegetarian Meal", img: "img/food/veg.jpg" }
-  ],
-  groceries: [
-    { name: "Milk", img: "img/groceries/milk.jpg" },
-    { name: "Eggs", img: "img/groceries/eggs.jpg" },
-    { name: "Bread", img: "img/groceries/bread.jpg" }
-  ],
-  transport: [
-    { name: "Taxi", img: "img/transport/taxi.jpg" },
-    { name: "Community Shuttle", img: "img/transport/shuttle.jpg" },
-    { name: "Ambulance", img: "img/transport/ambulance.jpg" }
-  ]
-};
-
 
 function speak(text) {
   const msg = new SpeechSynthesisUtterance(text);
@@ -150,7 +132,7 @@ function orderFood() {
   document.getElementById("output").innerHTML = `
     <h2>What would you like to eat?</h2>
     <div class="food-grid">
-      <img src="img/chicken.jpg" onclick="selectFood('Chicken Rice')">
+      <img src="" onclick="selectFood('Chicken Rice')">
       <img src="img/noodles.jpg" onclick="selectFood('Fishball Noodles')">
       <img src="img/veg.jpg" onclick="selectFood('Vegetarian Meal')">
       <img src="img/indian.jpg" onclick="selectFood('Indian Set')">
