@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ElderHome Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>ElderHome Hub</h1>
+<p class="prompt">Aunty, what do you want to do today?</p>
+
+<div class="grid">
+  <button onclick="orderFood()">🍲 Order Food</button>
+  <button onclick="bookAppointment()">🏥 Appointment</button>
+  <button onclick="buyGroceries()">🛒 Groceries</button>
+  <button onclick="medicineRefill()">💊 Medicine</button>
+  <button onclick="bookTransport()">🚕 Transport</button>
+  <button class="help" onclick="help()">🆘 HELP</button>
+</div>
+
+<button class="voice" onclick="startVoice()">🎤 Speak</button>
+
+<div id="output"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
