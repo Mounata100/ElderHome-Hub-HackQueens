@@ -119,9 +119,42 @@ function goHome() {
 }
 
 
-function bookTransport() {
+/*function bookTransport() {
   show("Taxi booked for 9 AM.");
+}*/
+
+function bookTransport() {
+  output.innerHTML = `
+    <h2>🚕 Choose Transport</h2>
+
+    <button onclick="confirmTransport('Taxi', '9:00 AM')">
+      Taxi – 9:00 AM
+    </button>
+
+    <button onclick="confirmTransport('Grab', '9:30 AM')">
+      Grab – 9:30 AM
+    </button>
+
+    <button onclick="confirmTransport('Wheelchair Van', '10:00 AM')">
+      Wheelchair Van – 10:00 AM
+    </button>
+
+    <br><br>
+    <button onclick="goHome()">BACK</button>
+  `;
 }
+
+function confirmTransport(type, time) {
+  fetch("http://localhost:3000/transport", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ type, time })
+  });
+
+  speak(`${type} booked for ${time}.`);
+  show(`${type} booked for ${time}.`);
+}
+
 
 function help() {
   fetch("http://localhost:3000/help", { method: "POST" });
@@ -132,10 +165,10 @@ function orderFood() {
   document.getElementById("output").innerHTML = `
     <h2>What would you like to eat?</h2>
     <div class="food-grid">
-      <img src="" onclick="selectFood('Chicken Rice')">
-      <img src="img/noodles.jpg" onclick="selectFood('Fishball Noodles')">
-      <img src="img/veg.jpg" onclick="selectFood('Vegetarian Meal')">
-      <img src="img/indian.jpg" onclick="selectFood('Indian Set')">
+      <img src="https://static.thehoneycombers.com/wp-content/uploads/sites/2/2020/06/chicken-rice-900x643.jpg" onclick="selectFood('Chicken Rice')">
+      <img src="https://www.veganeasy.org/wp-content/uploads/2022/09/Singapore-Noodle-Stir-fry-with-Veggies-and-Tempeh_fcsize-preview.jpg" onclick="selectFood('Fishball Noodles')">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfm7NgT-weEPRzYfpFTz2R0wPn_bpyXuyp_rveWaVUzPGr0qSxZ8iNOC-UQwBDMCMvQUIADGuGZB0UaDUs97PTBEwfzivpysjXAxYKylRdAmOjkURMYYzh_jDX1Ei8lqO4hw_K/s1600/02+SGE_4230+Coffee+Hive+-+Coffee+Kaya+Toast+Set+%2540+Novena+Square+2+%255BSingapore%255D+%2528Large%2529.JPG" onclick="selectFood('Vegetarian Meal')">
+      <img src="https://s3.culturally.co/uploads/post/blogheroimg/18/medium_f06a757c-dd4c-4b3e-a38e-ae231272e4ed.jpg" onclick="selectFood('Indian Set')">
     </div>
   `;
 }
