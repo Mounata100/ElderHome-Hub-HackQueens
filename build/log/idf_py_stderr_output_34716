@@ -1,0 +1,85 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\Mounata\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=1 C:\Users\Mounata\OneDrive - SIM - Singapore Institute of Management\Computer Science\Cyber Knights Hackathon 2025\ElderHome-Hub-HackQueens
+CMake Warning in C:/Users/Mounata/esp/v5.5.2/esp-idf/components/mbedtls/mbedtls/library/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/Mounata/OneDrive - SIM - Singapore Institute of Management/Computer Science/Cyber Knights Hackathon 2025/ElderHome-Hub-HackQueens/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/./
+
+  has 205 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    c781f84c58711a22f0b2e87aba773771/esp_sha1.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in C:/Users/Mounata/esp/v5.5.2/esp-idf/components/mbedtls/mbedtls/library/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/Mounata/OneDrive - SIM - Singapore Institute of Management/Computer Science/Cyber Knights Hackathon 2025/ElderHome-Hub-HackQueens/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/./
+
+  has 202 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    ea4d9d7bc17f0d80f5b2fce3be02590b/net_sockets.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in C:/Users/Mounata/esp/v5.5.2/esp-idf/components/bootloader_support/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/Mounata/OneDrive - SIM - Singapore Institute of Management/Computer Science/Cyber Knights Hackathon 2025/ElderHome-Hub-HackQueens/build/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/./
+
+  has 214 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    bootloader_flash/src/flash_qio_mode.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in C:/Users/Mounata/esp/v5.5.2/esp-idf/components/freertos/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/Mounata/OneDrive - SIM - Singapore Institute of Management/Computer Science/Cyber Knights Hackathon 2025/ElderHome-Hub-HackQueens/build/esp-idf/freertos/CMakeFiles/__idf_freertos.dir/./
+
+  has 194 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    FreeRTOS-Kernel/portable/xtensa/xtensa_overlay_os_hook.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in C:/Users/Mounata/esp/v5.5.2/esp-idf/components/wpa_supplicant/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/Mounata/OneDrive - SIM - Singapore Institute of Management/Computer Science/Cyber Knights Hackathon 2025/ElderHome-Hub-HackQueens/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/./
+
+  has 206 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    esp_supplicant/src/crypto/crypto_mbedtls.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in C:/Users/Mounata/esp/v5.5.2/esp-idf/components/esp_driver_touch_sens/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/Mounata/OneDrive - SIM - Singapore Institute of Management/Computer Science/Cyber Knights Hackathon 2025/ElderHome-Hub-HackQueens/build/esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/./
+
+  has 220 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    hw_ver1/touch_version_specific.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
